@@ -1,0 +1,11 @@
+      //solve the request can not more than 5 at a same time
+      //in js 
+      for(var i=0; i<20; i++){
+        setTimeout(function execute(){
+          wx.request({
+            url: 'http://www.runoob.com/try/try.php?filename=tryjs_mistakes_loose_2',
+            complete: logProcess
+          })
+        },i*50)
+        ;
+      }
