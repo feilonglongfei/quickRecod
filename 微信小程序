@@ -37,3 +37,27 @@
           <image style="width: 100%; max-height: 1200rpx; height:1200rpx; " mode="aspectFit" src="../../source/images/hetianyu/和田玉 一世龙门 玉牌 挂件71克/04223c8cde9d2cd8966921bd867a1125_5916de8bN561191c4.jpg"></image>
         </swiper-item>
       </swiper>
+      
+      
+   //getFolderList from cos   
+  [
+  {
+    "access_url": "http://yuyi-1254042112.file.myqcloud.com/test/412-00163.jpg",
+    "authority": "eInvalid",
+    "biz_attr": "",
+    "ctime": 1501490558,
+    "filelen": 20000,
+    "filesize": 20000,
+    "mtime": 1501490558,
+    "name": "412-00163.jpg",
+    "sha": "2d752eb85cf72ebe671ec4fbafb7d7bd754a15d4",
+    "source_url": "http://yuyi-1254042112.cosgz.myqcloud.com/test/412-00163.jpg"
+  },
+  {
+    "authority": "eInvalid",
+    "biz_attr": "",
+    "ctime": 1501491813,
+    "mtime": 1501491813,
+    "name": "test1-1/"
+  }
+]
