@@ -61,3 +61,16 @@
     "name": "test1-1/"
   }
 ]
+
+
+
+//preview images
+
+wx.previewImage({
+        current: '', // 当前显示图片的http链接
+        urls: ['http://bpic.588ku.com/back_pic/05/07/33/1359747ea7dde97.jpg!ww650',
+            'http://bpic.588ku.com/back_pic/00/02/75/41561a71adafd4a.jpg!ww800',
+            'http://bpic.588ku.com/back_pic/05/04/14/15595e0d36ed480.jpg!ww650'
+            ]            
+            // 需要预览的图片http链接列表
+    })
