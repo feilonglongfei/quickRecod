@@ -74,3 +74,13 @@ wx.previewImage({
             ]            
             // 需要预览的图片http链接列表
     })
+    
+    
+//show info with dialog
+ wx.showModal({
+          title: '返回错误',
+          content: (msg || '请求') + '失败：' + (ERR[result.data.message] || result.data.message) +
+          '；状态码：' + result.statusCode, showCancel: false
+        });
+
+wx.showToast({ title: (msg || '请求') + '成功', icon: 'success', duration: 3000 });
