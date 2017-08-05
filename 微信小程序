@@ -84,3 +84,46 @@ wx.previewImage({
         });
 
 wx.showToast({ title: (msg || '请求') + '成功', icon: 'success', duration: 3000 });
+
+
+
+// 首页初始化获取产品信息 通过自定义文件列表
+    // wx.request({
+    //   // url: 'http://yuyi-1254042112.cosgz.myqcloud.com/hetianyu/productList.txt',
+    //   url: 'http://yuyi-1254042112.cosgz.myqcloud.com/hetianyu/index.txt',
+    //   data: {
+    //     x: '',
+    //     y: ''
+    //   },
+    //   header: {
+    //     'content-type': 'application/json'
+    //   },
+    //   success: function (res) {
+    //     var data = res.data;
+    //     // var lines = data.split("\n");
+    //     // console.log(data);
+    //     // var productList = JSON.parse(data);
+    //     // for(var i=0; i<data.length; i++){
+    //     //     console.log(data[i].folder);
+    //     //     console.log(data[i].image);
+    //     // }
+    //     var dataPage = new Array();
+    //     var offsetTemp = (that.data.page - 1) * that.data.numberPerPage;
+    //     for (var i = offsetTemp; i < offsetTemp + that.data.numberPerPage && i < data.length; i++){
+    //       dataPage.push(data[i]);
+    //     }
+    //     that.setData({
+    //       pageList: dataPage
+    //     });
+    //     var pageListTemp = that.data.pageList;
+    //     for (var i = 0; i < pageListTemp.length; i++){
+    //       // console.log(pageListTemp[i].folder);
+    //       // console.log(pageListTemp[i].image);
+    //     }
+
+    //     // console.log(util.formatTime(new Date()));
+    //     //console.log(util.formatNumber(100)); //this will cause error as this function not expose out 
+
+    //   }
+    // });
+    //通过api获取产品列表
