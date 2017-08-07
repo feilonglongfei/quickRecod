@@ -145,8 +145,9 @@ wx.showToast({ title: (msg || '请求') + '成功', icon: 'success', duration: 3
     wx.login({
         success: function(res){
             console.log(res);
-
-            //get openid in server
+                
+            //get openid in server, raise wx.request to get login info 
+            //and return session_key to client so that can keep the session between client and server            
             //https://api.weixin.qq.com/sns/jscode2session?appid={appid}&secret={secrtValue}&grant_type=authorization_code&js_code={loginResCode}
             //will return 
             // {
