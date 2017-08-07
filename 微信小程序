@@ -139,3 +139,21 @@ wx.showToast({ title: (msg || '请求') + '成功', icon: 'success', duration: 3
   onReachBottom:function(){
       console.log(' on reach bottom...');
   },
+
+
+// user login 
+    wx.login({
+        success: function(res){
+            console.log(res);
+
+            //get openid in server
+            //https://api.weixin.qq.com/sns/jscode2session?appid={appid}&secret={secrtValue}&grant_type=authorization_code&js_code={loginResCode}
+            //will return 
+            // {
+            //     "session_key": "vxQV1JU5UxPzs3W7EoJyHw==",
+            //         "expires_in": 7200,
+            //             "openid": "oFpr70NBECo7rMllFX8I1CgG0AKY"
+            // }
+
+        }//success
+    })
