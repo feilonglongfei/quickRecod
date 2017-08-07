@@ -127,3 +127,15 @@ wx.showToast({ title: (msg || '请求') + '成功', icon: 'success', duration: 3
     //   }
     // });
     //通过api获取产品列表
+    
+    
+  触底刷新 下拉刷新
+ //need add "enablePullDownRefresh": true in app.json  window config
+  onPullDownRefresh: function () {
+      console.log(' pull down refresh...');
+      wx.stopPullDownRefresh();
+  },
+
+  onReachBottom:function(){
+      console.log(' on reach bottom...');
+  },
