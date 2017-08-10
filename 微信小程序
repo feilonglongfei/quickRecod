@@ -158,3 +158,263 @@ wx.showToast({ title: (msg || '请求') + '成功', icon: 'success', duration: 3
 
         }//success
     })
+    
+    
+// for some demo  in js side
+
+// pages/details/details.js
+var app = getApp()
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    images : '',
+    path: ''
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+    var that = this;
+    // wx.request({
+    //   url: 'http://yuyi-1254042112.cosgz.myqcloud.com/' + that.data.path + '/list.txt',
+    //   success : function(res){
+    //     // console.log(res.data);
+    //     that.setData({
+    //       images : res.data
+    //     });
+    //     // var imagesTemp = that.data.images;
+    //     // for (var i = 0; i < imagesTemp.length; i++) {
+    //     //   console.log(imagesTemp[i].imageName);
+    //     // }
+    //   }
+    // });  
+    
+    
+    // wx.previewImage({
+    //     current: '', // 当前显示图片的http链接
+    //     urls: ['http://bpic.588ku.com/back_pic/05/07/33/1359747ea7dde97.jpg!ww650',
+    //         'http://bpic.588ku.com/back_pic/00/02/75/41561a71adafd4a.jpg!ww800',
+    //         'http://bpic.588ku.com/back_pic/05/04/14/15595e0d36ed480.jpg!ww650'
+    //         ]            
+    //         // 需要预览的图片http链接列表
+    // });
+
+
+    // wx.login({
+    //     success: function (res) {
+    //         console.log(res);
+    //         // if (res.code) {
+    //         //     //发起网络请求
+    //         //     wx.request({
+    //         //         url: 'https://test.com/onLogin',
+    //         //         data: {
+    //         //             code: res.code
+    //         //         }
+    //         //     })
+    //         // } else {
+    //         //     console.log('获取用户登录态失败！' + res.errMsg)
+    //         // }
+    //     }
+    // });
+
+
+    // wx.login({
+    //     success: function (loginRes) {
+    //         //secret: f1efa4504a70838b1a41af7ffaa18244
+    //         //id: wxdab45079c569d5e4
+
+    //         var appid = 'wxdab45079c569d5e4'; //填写微信小程序appid  
+    //         var secret = 'f1efa4504a70838b1a41af7ffaa18244'; //填写微信小程序secret  
+
+    //         //调用request请求api转换登录凭证  
+    //         wx.request({
+                // url: 'https://api.weixin.qq.com/sns/jscode2session?appid=‘+<code></code>appid+’&secret=‘+secret+’&grant_type=authorization_code&js_code=' + loginRes.code,
+    //             header: {
+    //                 'content-type': 'application/json'
+    //             },
+    //             success: function (res) {
+    //                 console.log(res) //获取openid  
+    //             }
+    //         })
+
+    //     }
+    // });
+
+    // console.log(app);
+    // app.getUserInfo(function (userInfo) {
+    //     console.log(userInfo);
+    //     //更新数据
+    //     that.setData({
+    //         userInfo: userInfo
+    //     })
+    // });
+
+    // wx.login({
+    //     success: function(res){
+    //         console.log(res);
+
+    //         //get openid in server
+    //         //https://api.weixin.qq.com/sns/jscode2session?appid={appid}&secret={secrtValue}&grant_type=authorization_code&js_code={loginResCode}
+    //         //will return 
+    //         // {
+    //         //     "session_key": "vxQV1JU5UxPzs3W7EoJyHw==",
+    //         //         "expires_in": 7200,
+    //         //             "openid": "oFpr70NBECo7rMllFX8I1CgG0AKY"
+    //         // }
+
+    //     }//success
+    // })
+
+
+    // wx.authorize({
+    //     scope: 'scope.userInfo',
+    //     success() {
+    //         wx.getUserInfo({
+    //             success : function(res){
+    //                 console.log(res);
+    //                 console.log(res.signature);
+    //                 var appID = 'wxdab45079c569d5e4';
+    //                 // var pc = new WXBizDataCrypt(appId, sessionKey);
+    //             }
+    //         })//getUserInfo
+    //     }//success
+    // })
+
+
+
+
+    // wx.showActionSheet({    
+    //     itemList: ['A', 'B', 'C'],
+    //     success: function (res) {
+    //         console.log(res.tapIndex)
+    //     },
+    //     fail: function (res) {
+    //         console.log(res.errMsg)
+    //     }
+    // })
+
+
+    // wx.showToast({
+    //     title: 'the end...',
+    //     icon: 'success',
+    //     duration: 2000
+    // })
+
+    // wx.getSystemInfo({
+    //     success: function(res){
+    //         console.log(res);
+    //     }
+    // });
+
+    // var res = wx.getSystemInfoSync();
+    // console.log(res);
+
+    // wx.getNetworkType({
+    //     success:function(res){
+    //         console.log(res);
+    //     }
+    // });
+
+    //monitor the change of network
+    // wx.onNetworkStatusChange(function(res){
+    //     console.log(res);
+    // });
+
+    //update current title dynamically
+    // wx.setNavigationBarTitle({
+    //     title: '当前页面'
+    // })
+
+    // wx.showNavigationBarLoading();
+
+    // wx.hideNavigationBarLoading();
+
+    // wx.chooseAddress({
+    //     success: function (res) {
+    //         console.log(res);
+    //     }
+    // });
+
+    // wx.setStorageSync('keyName', 'value');
+
+    // wx.getStorage({
+    //     key: 'keyName',
+    //     success: function(res) {
+    //         console.log(res);
+    //     },
+    // });
+
+    // console.log(wx.getStorageSync("keyName"));
+    // console.log(wx.getStorageSync("keyName_") == '');
+
+    // console.log(wx.getStorageInfoSync());
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+    // var imagesTemp = this.data.images;
+    // for (var i = 0; i < imagesTemp.length; i++){
+    //   console.log(imagesTemp[i]);
+    // }
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+  
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+  
+  },
+
+  onPullDownRefresh: function () {
+      console.log(' pull down refresh...');
+      wx.stopPullDownRefresh();
+  }
+  ,
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+  
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+  
+  }
+})
+
+// end for some demo
