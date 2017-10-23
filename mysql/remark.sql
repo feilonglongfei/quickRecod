@@ -33,6 +33,7 @@ SELECT FROM_UNIXTIME(1493784635), UNIX_TIMESTAMP(FROM_UNIXTIME(1493784635)), UNI
 SELECT IFNULL(NULL, 0);
 
 
-
-SET @@session.autocommit=1;
+// disable current session autocommit
+// SET @@session.autocommit=1; will enable autocommit
+SET @@session.autocommit=0;
 SHOW VARIABLES LIKE '%autocommit%';
